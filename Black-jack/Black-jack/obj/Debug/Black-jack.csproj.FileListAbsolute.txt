@@ -9,3 +9,13 @@ C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Bla
 C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black-jack.csproj.GenerateResource.Cache
 C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black-jack.exe
 C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black-jack.pdb
+C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\bin\Debug\Black-jack.exe.config
+C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black-jack.exe
+C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black-jack.pdb
+C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\bin\Debug\Black-jack.exe
+C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\bin\Debug\Black-jack.pdb
+C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black-jack.csprojResolveAssemblyReference.cache
+C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black_jack.blackJack.resources
+C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black_jack.playerView.resources
+C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black_jack.Properties.Resources.resources
+C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black-jack.csproj.GenerateResource.Cache

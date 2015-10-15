@@ -73,6 +73,9 @@
     <EmbeddedResource Include="blackJack.resx">
       <DependentUpon>blackJack.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="game\gameView.resx">
+      <DependentUpon>gameView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="player\playerView.resx">
       <DependentUpon>playerView.cs</DependentUpon>
     </EmbeddedResource>
