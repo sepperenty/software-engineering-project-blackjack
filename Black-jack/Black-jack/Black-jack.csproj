@@ -46,14 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="blackJack.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="blackJack.Designer.cs">
+      <DependentUpon>blackJack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="game\gameController.cs" />
+    <Compile Include="game\gameModel.cs" />
+    <Compile Include="game\gameView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="game\gameView.Designer.cs">
+      <DependentUpon>gameView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="player\playerController.cs" />
+    <Compile Include="player\playerModel.cs" />
+    <Compile Include="player\playerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="player\playerView.Designer.cs">
+      <DependentUpon>playerView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="blackJack.resx">
+      <DependentUpon>blackJack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="player\playerView.resx">
+      <DependentUpon>playerView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

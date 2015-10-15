@@ -1,1 +1,11 @@
 c:\users\user\documents\visual studio 2015\Projects\Black-jack\Black-jack\bin\Debug\Black-jack.exe.config
+C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\bin\Debug\Black-jack.exe.config
+C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\bin\Debug\Black-jack.exe
+C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\bin\Debug\Black-jack.pdb
+C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black-jack.csprojResolveAssemblyReference.cache
+C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black_jack.blackJack.resources
+C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black_jack.playerView.resources
+C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black_jack.Properties.Resources.resources
+C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black-jack.csproj.GenerateResource.Cache
+C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black-jack.exe
+C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black-jack.pdb
