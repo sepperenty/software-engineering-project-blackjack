@@ -12,28 +12,50 @@ namespace Black_jack
 {
     public partial class blackJack : Form
     {
-        playerController _playerController;
         gameController _gameController;
+        int _numberOfPlayers = 5;
+        int yPosPlayer;
+        List<playerController> playerList = new List<playerController>();
 
         public blackJack()
         {
             InitializeComponent();
-            _playerController = new playerController();
+            // _playerController = new playerController();
             _gameController = new gameController();
         }
 
         private void blackJack_Load(object sender, EventArgs e)
         {
             gameView huidigGameVieuw = _gameController._gameVieuw;
-            playerView huidigPlayerVieuw = _playerController._playerView;
-            int yPos = huidigGameVieuw.Height;
-            huidigPlayerVieuw.Location = new Point(0, yPos);
+            //playerView huidigPlayerVieuw = _playerController._playerView;
+            yPosPlayer = huidigGameVieuw.Height;
+            //huidigPlayerVieuw.Location = new Point(0, yPosPlayer);
 
             Controls.Add(huidigGameVieuw);
-            
-            Controls.Add(huidigPlayerVieuw);
-            
-           
+            loadPlayers();
+            drawPlayers();
+
+
+        }
+
+        private void loadPlayers()
+        {
+            for (int playerNumber = 0; playerNumber < _numberOfPlayers; playerNumber++)
+            {
+                playerController huidigePlayer = new playerController();
+                playerList.Add(huidigePlayer);
+            }
+        }
+
+        private void drawPlayers()
+        {
+            for (int playerNumber = 0; playerNumber < _numberOfPlayers; playerNumber++)
+            {
+                playerView huidigePlayerVieuw = playerList[playerNumber]._playerView;
+                int xPosPlayer = playerList[playerNumber]._playerView.Width * playerNumber;
+                huidigePlayerVieuw.Location = new Point(xPosPlayer, yPosPlayer);
+                Controls.Add(huidigePlayerVieuw);
+            }
         }
     }
 }
