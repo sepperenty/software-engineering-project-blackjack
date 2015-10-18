@@ -16,5 +16,20 @@ namespace Black_jack
         {
             InitializeComponent();
         }
+
+        private void playerTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
