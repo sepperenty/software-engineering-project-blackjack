@@ -163,7 +163,7 @@
             this.Controls.Add(this.playerCard2);
             this.Controls.Add(this.playerCard1);
             this.Name = "gameView";
-            this.Size = new System.Drawing.Size(678, 280);
+            this.Size = new System.Drawing.Size(409, 251);
             this.ResumeLayout(false);
             this.PerformLayout();
 
