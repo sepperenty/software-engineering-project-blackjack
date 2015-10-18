@@ -13,16 +13,27 @@ namespace Black_jack
     public partial class blackJack : Form
     {
         playerController _playerController;
+        gameController _gameController;
 
         public blackJack()
         {
             InitializeComponent();
             _playerController = new playerController();
+            _gameController = new gameController();
         }
 
         private void blackJack_Load(object sender, EventArgs e)
         {
-            Controls.Add(_playerController._playerView);
+            gameView huidigGameVieuw = _gameController._gameVieuw;
+            playerView huidigPlayerVieuw = _playerController._playerView;
+            int yPos = huidigGameVieuw.Height;
+            huidigPlayerVieuw.Location = new Point(0, yPos);
+
+            Controls.Add(huidigGameVieuw);
+            
+            Controls.Add(huidigPlayerVieuw);
+            
+           
         }
     }
 }
