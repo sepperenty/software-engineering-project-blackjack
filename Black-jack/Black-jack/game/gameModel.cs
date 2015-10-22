@@ -8,5 +8,12 @@ namespace Black_jack
 {
    public class gameModel
     {
+        List<int> finalgameScore = new List<int>();
+
+        public List<int> finaleScores
+        {
+            get { return finalgameScore; }
+            set { finalgameScore = value; }
+        }
     }
 }

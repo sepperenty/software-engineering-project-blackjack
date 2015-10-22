@@ -28,10 +28,8 @@ namespace Black_jack
             gameView huidigGameVieuw = _gameController._gameVieuw;
             yPosPlayer = huidigGameVieuw.Height;
             Controls.Add(huidigGameVieuw);
-            loadPlayers();
-            drawPlayers();
-
-
+            loadPlayers();  //load players in list
+            drawPlayers();  //draw the players on the stage
         }
 
         private void loadPlayers()
@@ -47,10 +45,10 @@ namespace Black_jack
         {
             for (int playerNumber = 0; playerNumber < _numberOfPlayers; playerNumber++)
             {
-                playerView huidigePlayerVieuw = playerList[playerNumber]._playerView;
+                playerView huidigePlayerView = playerList[playerNumber]._playerView;
                 int xPosPlayer = playerList[playerNumber]._playerView.Width * playerNumber;
-                huidigePlayerVieuw.Location = new Point(xPosPlayer, yPosPlayer);
-                Controls.Add(huidigePlayerVieuw);
+                huidigePlayerView.Location = new Point(xPosPlayer, yPosPlayer);
+                Controls.Add(huidigePlayerView);
             }
         }
     }

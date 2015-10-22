@@ -1,0 +1,6 @@
+PUSH:
+
+-22/10: totalScore is zichtbaar
+ 	random is gemaakt
+
+	Bezig met lijst om te bepalen wie winnaar is

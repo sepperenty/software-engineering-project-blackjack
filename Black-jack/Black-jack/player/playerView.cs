@@ -17,24 +17,28 @@ namespace Black_jack
         {
             InitializeComponent();
             _playerController = initPlayerController;
-
         }
-
-
         private void btnHit_Click(object sender, EventArgs e)
         {
             _playerController.hitMe();
-            update();
-            //playerCard6.Text = _playerController._playerModel.kaartWaarden[5].ToString();
+            update();                      //update kaarwaarde (labels == waarde van model)
+            
+            
+            //string debug = "";
+            //foreach(int element in _playerController._playerModel.kaartWaarden)
+            //{
+            //    debug += element.ToString();
+            //}
 
+            //label4.Text = debug;
         }
 
       
 
         private void btnPass_Click(object sender, EventArgs e)
         {
-          
-
+            btnHit.Enabled = false;
+            _playerController.playerPassed();
         }
 
         private void playerTotal_Click(object sender, EventArgs e)
@@ -45,6 +49,7 @@ namespace Black_jack
         private void playerView_Load(object sender, EventArgs e)
         {
             _playerController.loadKaarten();
+            _playerController.updateTotalScore();
             update();
         }
 
@@ -56,6 +61,8 @@ namespace Black_jack
             playerCard4.Text = _playerController._playerModel.kaartWaarden[3].ToString();
             playerCard5.Text = _playerController._playerModel.kaartWaarden[4].ToString();
             playerCard6.Text = _playerController._playerModel.kaartWaarden[5].ToString();
+
+            playerTotal.Text = _playerController._playerModel.huidigeScore.ToString();
         }
     }
 }

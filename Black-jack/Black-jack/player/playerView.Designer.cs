@@ -38,12 +38,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnHit = new System.Windows.Forms.Button();
             this.btnPass = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // playerCard1
             // 
             this.playerCard1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playerCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerCard1.Location = new System.Drawing.Point(21, 22);
             this.playerCard1.Name = "playerCard1";
             this.playerCard1.Size = new System.Drawing.Size(50, 50);
@@ -54,7 +55,7 @@
             // playerCard2
             // 
             this.playerCard2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playerCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerCard2.Location = new System.Drawing.Point(77, 22);
             this.playerCard2.Name = "playerCard2";
             this.playerCard2.Size = new System.Drawing.Size(50, 50);
@@ -65,7 +66,7 @@
             // playerCard3
             // 
             this.playerCard3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playerCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerCard3.Location = new System.Drawing.Point(133, 22);
             this.playerCard3.Name = "playerCard3";
             this.playerCard3.Size = new System.Drawing.Size(50, 50);
@@ -76,7 +77,7 @@
             // playerCard4
             // 
             this.playerCard4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playerCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerCard4.Location = new System.Drawing.Point(189, 22);
             this.playerCard4.Name = "playerCard4";
             this.playerCard4.Size = new System.Drawing.Size(50, 50);
@@ -87,7 +88,7 @@
             // playerCard5
             // 
             this.playerCard5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playerCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerCard5.Location = new System.Drawing.Point(245, 22);
             this.playerCard5.Name = "playerCard5";
             this.playerCard5.Size = new System.Drawing.Size(50, 50);
@@ -98,7 +99,7 @@
             // playerCard6
             // 
             this.playerCard6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playerCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerCard6.Location = new System.Drawing.Point(301, 22);
             this.playerCard6.Name = "playerCard6";
             this.playerCard6.Size = new System.Drawing.Size(50, 50);
@@ -148,10 +149,19 @@
             this.btnPass.UseVisualStyleBackColor = true;
             this.btnPass.Click += new System.EventHandler(this.btnPass_Click);
             // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(25, 186);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(323, 59);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "label4";
+            // 
             // playerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnPass);
             this.Controls.Add(this.btnHit);
             this.Controls.Add(this.label2);
@@ -163,7 +173,7 @@
             this.Controls.Add(this.playerCard2);
             this.Controls.Add(this.playerCard1);
             this.Name = "playerView";
-            this.Size = new System.Drawing.Size(385, 182);
+            this.Size = new System.Drawing.Size(440, 322);
             this.Load += new System.EventHandler(this.playerView_Load);
             this.ResumeLayout(false);
 
@@ -181,5 +191,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnHit;
         private System.Windows.Forms.Button btnPass;
+        private System.Windows.Forms.Label label4;
     }
 }
