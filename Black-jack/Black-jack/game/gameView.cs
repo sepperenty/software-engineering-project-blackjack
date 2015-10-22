@@ -12,9 +12,11 @@ namespace Black_jack
 {
     public partial class gameView : UserControl
     {
-        public gameView()
+        public gameController _gameController;
+        public gameView(gameController initGameController)
         {
             InitializeComponent();
+            _gameController = initGameController;
         }
 
         private void playerTotal_Click(object sender, EventArgs e)

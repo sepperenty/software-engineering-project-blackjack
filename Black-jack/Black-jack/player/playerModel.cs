@@ -8,5 +8,31 @@ namespace Black_jack
 {
     public class playerModel
     {
+        public int _huidigeScore = 0;
+        public int[] _kaartenWaarde = new int[6];
+        public int _hitCount = 0;
+
+        public int hitCount
+        {
+            get { return _hitCount; }
+            set { _hitCount = value; }
+        }
+
+        public int[] kaartWaarden
+        {
+            get { return _kaartenWaarde; }
+            set { _kaartenWaarde = value; }
+        }
+
+
+
+        public int huidigeScore
+        {
+            get { return _huidigeScore; }
+            set { _huidigeScore = value; }
+        }
+
+
+
     }
 }
