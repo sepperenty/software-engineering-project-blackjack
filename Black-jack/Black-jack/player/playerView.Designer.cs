@@ -116,6 +116,7 @@
             this.playerTotal.TabIndex = 6;
             this.playerTotal.Text = "0";
             this.playerTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.playerTotal.Click += new System.EventHandler(this.playerTotal_Click);
             // 
             // label2
             // 
@@ -163,6 +164,7 @@
             this.Controls.Add(this.playerCard1);
             this.Name = "playerView";
             this.Size = new System.Drawing.Size(385, 182);
+            this.Load += new System.EventHandler(this.playerView_Load);
             this.ResumeLayout(false);
 
         }

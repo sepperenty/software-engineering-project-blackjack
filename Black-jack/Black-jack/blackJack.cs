@@ -13,7 +13,7 @@ namespace Black_jack
     public partial class blackJack : Form
     {
         gameController _gameController;
-        int _numberOfPlayers = 5;
+        int _numberOfPlayers = 2;
         int yPosPlayer;
         List<playerController> playerList = new List<playerController>();
 
