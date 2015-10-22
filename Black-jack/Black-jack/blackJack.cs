@@ -20,17 +20,13 @@ namespace Black_jack
         public blackJack()
         {
             InitializeComponent();
-            // _playerController = new playerController();
             _gameController = new gameController();
         }
 
         private void blackJack_Load(object sender, EventArgs e)
         {
             gameView huidigGameVieuw = _gameController._gameVieuw;
-            //playerView huidigPlayerVieuw = _playerController._playerView;
             yPosPlayer = huidigGameVieuw.Height;
-            //huidigPlayerVieuw.Location = new Point(0, yPosPlayer);
-
             Controls.Add(huidigGameVieuw);
             loadPlayers();
             drawPlayers();
