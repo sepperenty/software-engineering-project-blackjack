@@ -43,7 +43,7 @@
             // playerCard6
             // 
             this.playerCard6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playerCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerCard6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerCard6.Location = new System.Drawing.Point(296, 132);
             this.playerCard6.Name = "playerCard6";
             this.playerCard6.Size = new System.Drawing.Size(50, 50);
@@ -54,7 +54,7 @@
             // playerCard5
             // 
             this.playerCard5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playerCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerCard5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerCard5.Location = new System.Drawing.Point(240, 132);
             this.playerCard5.Name = "playerCard5";
             this.playerCard5.Size = new System.Drawing.Size(50, 50);
@@ -65,7 +65,7 @@
             // playerCard4
             // 
             this.playerCard4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playerCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerCard4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerCard4.Location = new System.Drawing.Point(184, 132);
             this.playerCard4.Name = "playerCard4";
             this.playerCard4.Size = new System.Drawing.Size(50, 50);
@@ -76,7 +76,7 @@
             // playerCard3
             // 
             this.playerCard3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playerCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerCard3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerCard3.Location = new System.Drawing.Point(128, 132);
             this.playerCard3.Name = "playerCard3";
             this.playerCard3.Size = new System.Drawing.Size(50, 50);
@@ -87,7 +87,7 @@
             // playerCard2
             // 
             this.playerCard2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playerCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerCard2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerCard2.Location = new System.Drawing.Point(72, 132);
             this.playerCard2.Name = "playerCard2";
             this.playerCard2.Size = new System.Drawing.Size(50, 50);
@@ -98,7 +98,7 @@
             // playerCard1
             // 
             this.playerCard1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.playerCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerCard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerCard1.Location = new System.Drawing.Point(16, 132);
             this.playerCard1.Name = "playerCard1";
             this.playerCard1.Size = new System.Drawing.Size(50, 50);
@@ -127,7 +127,6 @@
             this.playerTotal.TabIndex = 12;
             this.playerTotal.Text = "0";
             this.playerTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.playerTotal.Click += new System.EventHandler(this.playerTotal_Click);
             // 
             // label1
             // 
@@ -163,7 +162,7 @@
             this.Controls.Add(this.playerCard2);
             this.Controls.Add(this.playerCard1);
             this.Name = "gameView";
-            this.Size = new System.Drawing.Size(409, 251);
+            this.Size = new System.Drawing.Size(379, 318);
             this.ResumeLayout(false);
             this.PerformLayout();
 
