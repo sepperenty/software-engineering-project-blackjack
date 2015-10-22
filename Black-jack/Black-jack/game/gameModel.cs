@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Black_jack
 {
-    class gameModel
+   public class gameModel
     {
     }
 }
