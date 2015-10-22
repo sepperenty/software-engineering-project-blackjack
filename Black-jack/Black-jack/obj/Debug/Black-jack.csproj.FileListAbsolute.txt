@@ -21,3 +21,4 @@ C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering
 C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black-jack.csproj.GenerateResource.Cache
 C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black_jack.gameView.resources
 C:\Users\User\REPOSITORIES\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black_jack.gameView.resources
+C:\Users\Eigenaar\Documents\School\mct3\SoftwareEngineering\software-engineering-project-blackjack\Black-jack\Black-jack\obj\Debug\Black_jack.computerView.resources

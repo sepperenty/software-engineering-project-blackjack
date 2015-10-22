@@ -13,6 +13,7 @@ namespace Black_jack
     public partial class gameView : UserControl
     {
         public gameController _gameController;
+
         public gameView(gameController initGameController)
         {
             InitializeComponent();
@@ -25,6 +26,11 @@ namespace Black_jack
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gameView_Load(object sender, EventArgs e)
         {
 
         }

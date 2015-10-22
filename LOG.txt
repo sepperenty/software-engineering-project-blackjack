@@ -4,3 +4,5 @@ PUSH:
  	random is gemaakt
 
 	Bezig met lijst om te bepalen wie winnaar is
+
+-22/10: Game MVC veranderd naar Computer MVC

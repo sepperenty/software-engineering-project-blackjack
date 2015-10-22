@@ -52,6 +52,14 @@
     <Compile Include="blackJack.Designer.cs">
       <DependentUpon>blackJack.cs</DependentUpon>
     </Compile>
+    <Compile Include="computer\computerView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="computer\computerView.Designer.cs">
+      <DependentUpon>computerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="computer\computerController.cs" />
+    <Compile Include="computer\computerModel.cs" />
     <Compile Include="game\gameController.cs" />
     <Compile Include="game\gameModel.cs" />
     <Compile Include="game\gameView.cs">
@@ -72,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="blackJack.resx">
       <DependentUpon>blackJack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="computer\computerView.resx">
+      <DependentUpon>computerView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="game\gameView.resx">
       <DependentUpon>gameView.cs</DependentUpon>
@@ -101,6 +112,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

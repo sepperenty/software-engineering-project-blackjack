@@ -10,7 +10,7 @@ namespace Black_jack
     {
         public playerView _playerView;
         public playerModel _playerModel;
-        //static int seeder;
+        static int seeder;
         Random _random = new Random();          //seeder toevoegen???
         int totalScore;
         

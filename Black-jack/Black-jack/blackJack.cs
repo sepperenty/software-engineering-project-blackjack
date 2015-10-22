@@ -12,7 +12,7 @@ namespace Black_jack
 {
     public partial class blackJack : Form
     {
-        gameController _gameController;
+        computerController _computerController;
         int _numberOfPlayers = 2;
         int yPosPlayer;
         List<playerController> playerList = new List<playerController>();
@@ -20,14 +20,14 @@ namespace Black_jack
         public blackJack()
         {
             InitializeComponent();
-            _gameController = new gameController();
+           _computerController = new computerController();
         }
 
         private void blackJack_Load(object sender, EventArgs e)
         {
-            gameView huidigGameVieuw = _gameController._gameVieuw;
-            yPosPlayer = huidigGameVieuw.Height;
-            Controls.Add(huidigGameVieuw);
+            computerView huidigeComputerView = _computerController._computerView;
+            yPosPlayer = huidigeComputerView.Height;
+            Controls.Add(huidigeComputerView);
             loadPlayers();  //load players in list
             drawPlayers();  //draw the players on the stage
         }

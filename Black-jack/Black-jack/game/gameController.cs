@@ -8,11 +8,13 @@ namespace Black_jack
 {
   public  class gameController
     {
-        public gameView _gameVieuw;
+        public gameView _gameView;
         public gameModel _gameModel;
+        
+
         public gameController()
         {
-            _gameVieuw = new gameView(this);
+            _gameView = new gameView(this);
             _gameModel = new gameModel();
         }
     }
