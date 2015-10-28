@@ -13,14 +13,17 @@ namespace Black_jack
     public partial class blackJack : Form
     {
         computerController _computerController;
-        int _numberOfPlayers = 2;
+        gameController _gameController;
+        int _numberOfPlayers = 4;
         int yPosPlayer;
-        List<playerController> playerList = new List<playerController>();
+        bool everyonePassed = false;
+        List<playerController> _playerList = new List<playerController>();
 
         public blackJack()
         {
             InitializeComponent();
-           _computerController = new computerController();
+            _computerController = new computerController();
+            _gameController = new gameController();
         }
 
         private void blackJack_Load(object sender, EventArgs e)
@@ -30,6 +33,7 @@ namespace Black_jack
             Controls.Add(huidigeComputerView);
             loadPlayers();  //load players in list
             drawPlayers();  //draw the players on the stage
+            timer1.Start();
         }
 
         private void loadPlayers()
@@ -37,7 +41,7 @@ namespace Black_jack
             for (int playerNumber = 0; playerNumber < _numberOfPlayers; playerNumber++)
             {
                 playerController huidigePlayer = new playerController();
-                playerList.Add(huidigePlayer);
+                _playerList.Add(huidigePlayer);
             }
         }
 
@@ -45,10 +49,20 @@ namespace Black_jack
         {
             for (int playerNumber = 0; playerNumber < _numberOfPlayers; playerNumber++)
             {
-                playerView huidigePlayerView = playerList[playerNumber]._playerView;
-                int xPosPlayer = playerList[playerNumber]._playerView.Width * playerNumber;
+                playerView huidigePlayerView = _playerList[playerNumber]._playerView;
+                int xPosPlayer = _playerList[playerNumber]._playerView.Width * playerNumber;
                 huidigePlayerView.Location = new Point(xPosPlayer, yPosPlayer);
                 Controls.Add(huidigePlayerView);
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            everyonePassed = _gameController.CheckIfPassed(_playerList);
+
+            if (everyonePassed)
+            {
+                textBox1.Text = _gameController.WhoWon(_playerList);
             }
         }
     }

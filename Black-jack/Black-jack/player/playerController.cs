@@ -10,11 +10,8 @@ namespace Black_jack
     {
         public playerView _playerView;
         public playerModel _playerModel;
-        static int seeder;
-        Random _random = new Random();          //seeder toevoegen???
-        int totalScore;
-        
-
+        static int seeder = 0;
+        Random _random = new Random(seeder++);        //seeder toevoegen???
         private int minCard = 1;
         private int maxCard = 14;
 
@@ -42,7 +39,7 @@ namespace Black_jack
         {
             for(int kaart = 0; kaart < _playerModel.kaartWaarden.Length; kaart++)
             {
-                _playerModel.kaartWaarden[kaart] = 0;           //initialisatie van de kaarten, allemaal op 0
+                _playerModel.kaartWaarden[kaart] = 0;                       //initialisatie van de kaarten, allemaal op 0
             }
             _playerModel.kaartWaarden[0] = _random.Next(minCard, maxCard);  //eerste kaart krijgt meteen een random
             _playerModel.kaartWaarden[1] = _random.Next(minCard, maxCard);  //eerste kaart krijgt meteen een random
