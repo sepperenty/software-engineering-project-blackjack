@@ -14,6 +14,7 @@ namespace Black_jack
     {
         computerController _computerController;
         gameController _gameController;
+
         int _numberOfPlayers = 4;
         int yPosPlayer;
         bool everyonePassed = false;
@@ -34,6 +35,7 @@ namespace Black_jack
             loadPlayers();  //load players in list
             drawPlayers();  //draw the players on the stage
             timer1.Start();
+            lblWinMessage.Text = "";
         }
 
         private void loadPlayers()
@@ -52,6 +54,7 @@ namespace Black_jack
                 playerView huidigePlayerView = _playerList[playerNumber]._playerView;
                 int xPosPlayer = _playerList[playerNumber]._playerView.Width * playerNumber;
                 huidigePlayerView.Location = new Point(xPosPlayer, yPosPlayer);
+                huidigePlayerView._playerController._playerModel._playerIdentity = playerNumber+1;
                 Controls.Add(huidigePlayerView);
             }
         }
@@ -60,9 +63,12 @@ namespace Black_jack
         {
             everyonePassed = _gameController.CheckIfPassed(_playerList);
 
-            if (everyonePassed)
+            if(everyonePassed)
             {
-                textBox1.Text = _gameController.WhoWon(_playerList);
+                _computerController.throwCards();
+                _computerController._computerView.updateCards();
+                _gameController.WhoWon(_playerList, _computerController._computerModel.huidigeScore);
+                lblWinMessage.Text = _gameController._gameModel.endWinner;
             }
         }
     }

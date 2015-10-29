@@ -8,24 +8,41 @@ namespace Black_jack
 {
   public  class gameController
     {
-        public string WhoWon(List<playerController> playerlist)
+        public gameModel _gameModel  = new gameModel();
+
+        public void WhoWon(List<playerController> playerlist, int computerScore)
         {
             int winningScore = 0;
             string winner = "";
 
-            for(int i = 0; i < playerlist.Count; i++)
+            for (int i = 0; i < playerlist.Count; i++)
             {
                 int huidigePlayerScore = playerlist[i]._playerModel._huidigeScore;
-                if (winningScore < huidigePlayerScore)
+                if (winningScore < huidigePlayerScore && huidigePlayerScore <= 21)
                 {
                     winningScore = huidigePlayerScore;
-                    winner = "player " + i.ToString() + " won";
+                    int winnerPlusOne = i + 1;
+                    winner = "player " + winnerPlusOne.ToString() + " won";
                 }
+            } 
 
+      
 
+      
+            if(computerScore > winningScore && computerScore <= 21)
+            {
+                _gameModel.endWinner = "computer won";
             }
 
-            return winner;
+            else if(winningScore > computerScore && computerScore <= 21)
+            {
+                _gameModel.endWinner = winner;
+            }
+
+            else
+            {
+                _gameModel.endWinner = "nobody won";
+            }
         }
 
         public bool CheckIfPassed(List<playerController> playerlist)
@@ -41,11 +58,8 @@ namespace Black_jack
                 }
             }
 
-
             return isPassed;
         }
-
-
-
     }
 }
+

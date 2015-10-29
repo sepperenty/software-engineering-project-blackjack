@@ -12,6 +12,7 @@ namespace Black_jack
         public int[] _kaartenWaarde = new int[6];
         public int _hitCount = 1;
         public bool _isPassed = false;
+        public int _playerIdentity = 0;
 
         public int hitCount
         {
@@ -32,6 +33,11 @@ namespace Black_jack
         {
             get { return _isPassed; }
             set { _isPassed = value; }
+        }
+        public int PlayerIdentity
+        {
+            get { return _playerIdentity; }
+            set { _playerIdentity = value; }
         }
     }
 }

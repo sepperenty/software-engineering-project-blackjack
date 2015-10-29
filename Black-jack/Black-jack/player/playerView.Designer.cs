@@ -38,7 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnHit = new System.Windows.Forms.Button();
             this.btnPass = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblIdentity = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // playerCard1
@@ -149,19 +149,20 @@
             this.btnPass.UseVisualStyleBackColor = true;
             this.btnPass.Click += new System.EventHandler(this.btnPass_Click);
             // 
-            // label4
+            // lblIdentity
             // 
-            this.label4.Location = new System.Drawing.Point(25, 186);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(323, 59);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "label4";
+            this.lblIdentity.Location = new System.Drawing.Point(25, 186);
+            this.lblIdentity.Name = "lblIdentity";
+            this.lblIdentity.Size = new System.Drawing.Size(323, 59);
+            this.lblIdentity.TabIndex = 17;
+            this.lblIdentity.Text = "label4";
+            this.lblIdentity.Click += new System.EventHandler(this.label4_Click);
             // 
             // playerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblIdentity);
             this.Controls.Add(this.btnPass);
             this.Controls.Add(this.btnHit);
             this.Controls.Add(this.label2);
@@ -191,6 +192,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnHit;
         private System.Windows.Forms.Button btnPass;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblIdentity;
     }
 }

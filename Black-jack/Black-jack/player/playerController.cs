@@ -27,10 +27,18 @@ namespace Black_jack
 
         public void hitMe()
         {  
-            _playerModel.hitCount++;        //hitCount bijhouden
+            _playerModel.hitCount++;   //hitCount bijhouden
             if (_playerModel.hitCount < 6)
             {
-                _playerModel.kaartWaarden[_playerModel.hitCount] = _random.Next(minCard, maxCard); //bij iedere hit komt er een nieuwe random
+                if (_playerModel.huidigeScore <= 21)
+                {
+                    _playerModel.kaartWaarden[_playerModel.hitCount] = _random.Next(minCard, maxCard); //bij iedere hit komt er een nieuwe random
+                    updateTotalScore();
+                    if(_playerModel.huidigeScore > 21)
+                    {
+                        playerPassed();
+                    }
+                }               
             }
             updateTotalScore();
         }
@@ -58,7 +66,6 @@ namespace Black_jack
         public void playerPassed()
         {
             _playerModel.isPassed = true;
-
         }
     }
 }

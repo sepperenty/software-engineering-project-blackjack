@@ -12,6 +12,7 @@ namespace Black_jack
 {
     public partial class playerView : UserControl
     {
+        
         public playerController _playerController;
         public playerView(playerController initPlayerController)
         {
@@ -24,16 +25,8 @@ namespace Black_jack
             update();                      //update kaarwaarde (labels == waarde van model)
             
             
-            //string debug = "";
-            //foreach(int element in _playerController._playerModel.kaartWaarden)
-            //{
-            //    debug += element.ToString();
-            //}
-
-            //label4.Text = debug;
         }
-
-      
+          
 
         private void btnPass_Click(object sender, EventArgs e)
         {
@@ -50,6 +43,7 @@ namespace Black_jack
         {
             _playerController.loadKaarten();
             _playerController.updateTotalScore();
+            lblIdentity.Text = "Player: " + _playerController._playerModel._playerIdentity.ToString();
             update();
         }
 
@@ -61,8 +55,20 @@ namespace Black_jack
             playerCard4.Text = _playerController._playerModel.kaartWaarden[3].ToString();
             playerCard5.Text = _playerController._playerModel.kaartWaarden[4].ToString();
             playerCard6.Text = _playerController._playerModel.kaartWaarden[5].ToString();
-
             playerTotal.Text = _playerController._playerModel.huidigeScore.ToString();
+
+            //if (_playerController._playerModel.isPassed)
+            //{
+            //    btnHit.Enabled = false;
+            //}
+
+            btnHit.Enabled = !_playerController._playerModel.isPassed;
+            
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

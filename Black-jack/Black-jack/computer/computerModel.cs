@@ -6,14 +6,22 @@ using System.Threading.Tasks;
 
 namespace Black_jack
 {
-   public class computerModel
+    public class computerModel
     {
-        List<int> finalgameScore = new List<int>();
+        public int[] _randomComputerKaarten = new int[5];
+        public int _huidigeScore = 0;
 
-        public List<int> finaleScores
+        public int huidigeScore
         {
-            get { return finalgameScore; }
-            set { finalgameScore = value; }
+            get { return _huidigeScore; }
+            set { _huidigeScore = value; }
         }
+
+        public int[] randomComputerKaarten
+        {
+            get { return _randomComputerKaarten; }
+            set { _randomComputerKaarten = value; }
+        }
+
     }
 }

@@ -8,12 +8,12 @@ namespace Black_jack
 {
    public class gameModel
     {
-        List<int> finalgameScore = new List<int>();
+        public string _endWinner;
 
-        public List<int> finaleScores
+        public string endWinner
         {
-            get { return finalgameScore; }
-            set { finalgameScore = value; }
+            get { return _endWinner; }
+            set { _endWinner = value; }
         }
     }
 }

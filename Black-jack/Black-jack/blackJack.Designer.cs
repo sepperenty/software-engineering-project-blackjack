@@ -30,19 +30,24 @@
         {
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblWinMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // textBox1
+            // lblWinMessage
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 479);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.lblWinMessage.AutoSize = true;
+            this.lblWinMessage.BackColor = System.Drawing.Color.Silver;
+            this.lblWinMessage.Font = new System.Drawing.Font("Headline One", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWinMessage.ForeColor = System.Drawing.Color.Black;
+            this.lblWinMessage.Location = new System.Drawing.Point(435, 79);
+            this.lblWinMessage.Name = "lblWinMessage";
+            this.lblWinMessage.Size = new System.Drawing.Size(133, 60);
+            this.lblWinMessage.TabIndex = 0;
+            this.lblWinMessage.Text = "Label";
             // 
             // blackJack
             // 
@@ -50,9 +55,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(618, 511);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblWinMessage);
             this.Name = "blackJack";
-            this.Text = "Form1";
+            this.Text = "BLACK JACK!!!";
             this.Load += new System.EventHandler(this.blackJack_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -62,7 +67,7 @@
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblWinMessage;
     }
 }
 
